@@ -15,6 +15,6 @@ def div(n):
 
 def ami(n):
 	b=sum(div(n))
-	return sum(div(b))==n
+	return b != n and sum(div(b))==n
 
 print sum(n for n in range(10000) if ami(n))
