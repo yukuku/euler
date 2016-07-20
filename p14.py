@@ -10,5 +10,5 @@ def a(n):
 			n=3*n+1
 	return res
 
-print max(a(n) for n in range(1, 1000000))
+print max((n for n in range(1, 1000000)), key=lambda n: a(n))
 
